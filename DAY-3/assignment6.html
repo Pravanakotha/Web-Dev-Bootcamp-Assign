@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			td {
+				color: red;
+			}
+		</style>	
+		<title>Fieldset Tag Demo</title>
+	</head>
+	<body>
+		<fieldset id="abcd">
+			<legend>Details</legend>
+			Name: <input type="text" id="uname" required /> <br/> <br/>
+			Adharcordno: <input type="adarcard" id="adharcard"  /><br/> <br/>
+			Address: <input type="text" id="address" disabled="address" /> <br/><br/>
+			<button onclick="readData()">Submit</button>
+		</fieldset> <br/><br/>
+
+		<h1>Result Table</h1>
+		<table border='1'>
+			<tr>
+				<th>Name</th>
+				<th>address</th>
+				<th>adhar card</th>
+			</tr>
+			<tr>
+				<td id="abc">read</td>
+				<td id="123">read</td>
+			</tr>
+		</table>
+		<script>
+			function readData() {
+				var uname=document.getElementById('uname').val;
+				var adharcard=document.getElementById('adharcard').val;
+				console.log(document.getElementById('abc'));
+				console.log(uname,adharcard);
+
+				document.getElementById('abc').innerHTML=uname;
+				document.getElementById('123').innerHTML=adharcard;
+
+
+			}
+		</script>
+	</body>
+</html> 
+
