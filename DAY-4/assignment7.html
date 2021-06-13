@@ -1,0 +1,21 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<h1>Linking php and html</h1>
+</head>
+<body>
+	<form>
+	<label for="email">Email</label>
+	<input type="text" id="mail" name="mail" placeholder ="abc@gmail.com">
+</form>
+<button  onclick="submit()">Click to submit</button>
+<p id="res"></p>
+<script>
+	function submit()
+	{
+		var email=document.getElementById('mail').value;
+		document.getElementById('res').innerHTML=email;
+	}
+</script>
+</body>
+</html>
